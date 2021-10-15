@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impala Playground</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Welcome to the Impala Dummy Playground!</h1>
+        <img src="https://images.prismic.io/impala/be36b12f-deeb-45de-baa9-014464539f46_5e38c81f-70a8-4e17-b732-66bafb5c0fb8_Frame%2B697.webp?auto=compress,format&fit=max&w=1940&q=40"
+            alt="">
+    </div>
+</body>
+<script>
+    const myResult = fetch('http://localhost:8000/hotels')
+        .then(data => data.json().then(json => console.log(json)));
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+    html,
+    body {
+        height: 100%;
+        font-family: Questrial;
+    }
+
+    .wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .wrapper img {
+        max-width: 500px;
+    }
+
+    h1 {
+        color: #351CAC;
+    }
+</style>
+
+</html>
